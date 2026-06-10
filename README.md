@@ -6,8 +6,8 @@
 
 | Service | URL |
 |---------|-----|
-| **Frontend** | `https://your-app.vercel.app` _(update after deploy)_ |
-| **Backend** | `https://your-app.onrender.com` _(update after deploy)_ |
+| **Frontend** | `https://your-app.vercel.app` _(update after Vercel deploy)_ |
+| **Backend** | `https://correm-advisory.onrender.com` |
 
 ---
 
