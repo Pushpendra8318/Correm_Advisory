@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: hdfc-analyzer-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///./hdfc_analyzer.db
+    healthCheckPath: /health
