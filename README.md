@@ -6,7 +6,7 @@
 
 | Service | URL |
 |---------|-----|
-| **Frontend** | `https://your-app.vercel.app` _(update after Vercel deploy)_ |
+| **Frontend** | `https://correm-advisory.vercel.app` |
 | **Backend** | `https://correm-advisory.onrender.com` |
 
 ---
