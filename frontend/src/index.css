@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-navy-950 text-white font-sans antialiased;
+    background: linear-gradient(135deg, #0A1628 0%, #0D1F3C 50%, #0A1628 100%);
+    min-height: 100vh;
+  }
+
+  * {
+    @apply scroll-smooth;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-navy-900;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-navy-700 rounded-full;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl;
+  }
+
+  .glass-card-hover {
+    @apply glass-card hover:bg-white/8 transition-all duration-200;
+  }
+
+  .stat-card {
+    @apply glass-card p-5 flex flex-col gap-1;
+  }
+
+  .btn-primary {
+    @apply bg-brand hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-xl
+           transition-all duration-200 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed
+           flex items-center gap-2 justify-center;
+  }
+
+  .btn-secondary {
+    @apply bg-white/10 hover:bg-white/15 text-white font-medium px-5 py-2.5 rounded-xl
+           transition-all duration-200 border border-white/20 flex items-center gap-2 justify-center;
+  }
+
+  .section-title {
+    @apply text-xl font-bold text-white mb-4;
+  }
+
+  .label-text {
+    @apply text-xs font-medium text-blue-300 uppercase tracking-wider;
+  }
+
+  .value-text {
+    @apply text-base font-semibold text-white;
+  }
+
+  .badge {
+    @apply text-xs font-medium px-2 py-0.5 rounded-full;
+  }
+
+  .table-cell {
+    @apply px-3 py-2.5 text-sm whitespace-nowrap;
+  }
+}
+
+/* Drop zone active state */
+.drop-active {
+  @apply border-brand bg-brand/10;
+}
+
+/* Progress bar animation */
+@keyframes progressFill {
+  from { width: 0%; }
+  to { width: var(--progress); }
+}
+
+.progress-bar {
+  animation: progressFill 0.5s ease-out forwards;
+}
+
+/* Number counter animation */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.count-up {
+  animation: countUp 0.4s ease-out;
+}

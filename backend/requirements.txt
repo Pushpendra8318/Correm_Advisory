@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+pdfplumber
+openpyxl
+python-multipart
+sqlalchemy
+pydantic
+Pillow
+# pymupdf    -- optional: pip install pymupdf  (fallback PDF parser)
+# pytesseract -- optional: pip install pytesseract  (OCR for scanned PDFs)

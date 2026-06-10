@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.env
+*.db
+*.sqlite3
+hdfc_analyzer.db
+test_output.xlsx
+hdfc_test_statement.pdf
+uvicorn_out.txt
+uvicorn_err.txt
+
+# Node
+node_modules/
+dist/
+.DS_Store
+vite_out.txt
+vite_err.txt
+
+# Env files (keep .env.example, ignore local overrides)
+frontend/.env.local
+frontend/.env
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
